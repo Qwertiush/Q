@@ -1,0 +1,225 @@
+*{
+    --primary-color: #181129;
+    --secendary-color: #d4b9d4;
+    --tertiary-color: #221a36;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--secendary-color);
+    font-family: monospace;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secendary-color);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+h3{
+    color: var(--secendary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p{
+    color: var(--secendary-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+h6{
+    color: var(--secendary-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secendary-color);
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secendary-color);
+    min-height: 300px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secendary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.6s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secendary-color);
+}
+
+::placeholder{
+    color: var(--primary-color);;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+}
+
+.login-container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+}
+
+.login-container img{
+    width: 30%;
+    padding: 20px;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px 0 0 0 solid var(--secendary-color);
+    box-shadow: 0 5px 5px var(--secendary-color);
+    background-color: var(--tertiary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.posts-container img,
+.buttons-container img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px var(--secendary-color);
+    transition: box-shadow 0.6s ease;
+    background-color: var(--tertiary-color);
+}
+
+.static-post-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px var(--secendary-color);
+    transition: box-shadow 0.6s ease;
+    background-color: var(--tertiary-color);
+}
+
+.static-post-container textarea{
+    min-height: 100px;
+}
+
+.post-container:hover{
+    box-shadow: 0 16px 32px var(--secendary-color);
+}
+
+.post-container p,
+.static-post-container p{
+    text-align: justify;
+    white-space: pre-line;
+}
+
+.post-meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.line{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 3px 3px var(--secendary-color);
+    background-color: var(--secendary-color);
+    margin: 10px 0;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 2px solid var(--secendary-color);
+}
+
+.likes-dislikes button{
+    margin-top: 1rem;
+}
+
+.logout-btn{
+    background-color: rgb(231, 51, 51);
+    color: var(--secendary-color);
+}
