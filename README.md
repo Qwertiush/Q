@@ -112,4 +112,23 @@ The goal of this project is to create a web-based blog application that allows u
 2. Start Apache and MariaDB
 3. Import the database schema into MariaDB
 4. Place project files inside the `htdocs` directory
-5. Open your browser and go to:
+5. Open your browser and go to: http://localhost/project-folder
+---
+
+## 📖 Project Overview
+
+This project demonstrates:
+
+- Backend development with PHP
+- Relational database design
+- Secure authentication mechanisms
+- CRUD operations
+- Form validation
+- Responsive front-end design
+- User interaction systems (comments & reactions)
+
+---
+
+## 📌 Status
+
+This project was created for educational purposes to demonstrate full-stack web development fundamentals using PHP and MariaDB.
